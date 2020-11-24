@@ -21,3 +21,21 @@
 .menuItem:hover {
     background: $menuItemBackgroundColorHover;
 }
+.menuItem:active {
+    transform: scale(1.05);
+}
+
+.content {
+    margin: auto;
+    max-width: 80%;
+}
+
+.footer {
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: $footerBackgroundColor;
+}
+.footerLink {
+    color: $footerColor;
+}

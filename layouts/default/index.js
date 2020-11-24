@@ -1,15 +1,17 @@
+import styles from './defaultLayout.module.scss'
 import Menu from './menu'
+import Footer from './footer'
 
 export default function DefaultLayout ({ children }) {
     return (
-        <div>
+        <div className={styles.defaultLayout}>
             <Menu />
-            
 
-            {/* Content */}
-            {children}
+            <div className={styles.content}>
+                {children}
+            </div>
 
-            {/* Footer */}
+            <Footer />
         </div>
     )
 }
