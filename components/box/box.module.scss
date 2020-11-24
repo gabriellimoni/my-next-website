@@ -1,0 +1,14 @@
+@import '../../styles/colors.scss';
+
+.box {
+    margin: 15px 5px;
+    background-color: $almostWhite;
+    box-shadow: 0px 0px 15px $gray;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.boxTitle {
+    font-size: 1.7rem;
+    margin: 0;
+}
