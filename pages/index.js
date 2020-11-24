@@ -15,7 +15,7 @@ export default function Home({ preRenderedText }) {
     }
 
     renderText()
-  })
+  }, [])
 
   return (
     <DefaultLayout>
