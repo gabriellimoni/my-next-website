@@ -1,0 +1,23 @@
+@import '../../styles/colors.scss';
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    background: $menuBackgroundColor;
+}
+.menuItem {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    border: 1px solid $primary;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: $primary;
+    background-color: $menuItemBackgroundColor;
+    transition: .2s all;
+}
+.menuItem:hover {
+    background: $menuItemBackgroundColorHover;
+}
