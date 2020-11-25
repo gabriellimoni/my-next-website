@@ -1,6 +1,7 @@
 import Layout from '../../layouts/default'
 import Box from '../../components/box'
 import PokeWidget from '../../components/pokeWidget'
+import PokemonSearchWidget from '../../components/pokeSearchWidget'
 
 import { useRouter } from 'next/router'
 import { generateInitialPokemons, getPokemonDataById } from '../../lib/pokemon'
@@ -22,6 +23,7 @@ export default function Pokemon (props) {
     
     return (
         <Layout>
+            <PokemonSearchWidget/>
             <PokemonOrFallback/>
         </Layout>
     )
