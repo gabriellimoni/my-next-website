@@ -1,0 +1,16 @@
+@import '../../styles/colors.scss';
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $gray;
+}
+
+.side {
+    padding: 10px;
+}
+
+.stats {
+    margin: 5px 0;
+}
