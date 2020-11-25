@@ -2,6 +2,7 @@ import Head from 'next/head'
 import DefaultLayout from '../layouts/default'
 
 import Box from '../components/box'
+import PokeSearchWidget from '../components/pokeSearchWidget'
 import { useEffect, useState } from 'react'
 
 export default function Home({ preRenderedText }) {
@@ -23,6 +24,11 @@ export default function Home({ preRenderedText }) {
         <title>Limoni - Personal</title>
       </Head>
 
+      <Box title="Teste de Box">
+        <h3>Find Pokemons by name or ID - Try Pikachu</h3>
+        <PokeSearchWidget/>
+      </Box>
+      
       <Box title="Teste de Box">
         {text}
       </Box>
