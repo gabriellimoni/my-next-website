@@ -25,7 +25,7 @@ export default function Pokemon (props) {
     return (
         <Layout>
             <Head>
-                <title>Pokemon - {props.name.toUpperCase()}</title>
+                <title>Pokemon - {props.name ? props.name.toUpperCase() : 'Default'}</title>
             </Head>
             <PokemonSearchWidget/>
             <PokemonOrFallback/>
