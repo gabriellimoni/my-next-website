@@ -40,7 +40,8 @@ export async function getStaticProps (context) {
     return {
         props: {
             ...pokeData,
-        }
+        },
+        revalidate: 20,
     }
 }
 
@@ -50,7 +51,7 @@ export async function getStaticPaths () {
         return { 
             params: {
                 id: String(d.id)
-            } 
+            }
         } 
     })
 
