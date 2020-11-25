@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Layout from '../../layouts/default'
 import Box from '../../components/box'
 import PokeWidget from '../../components/pokeWidget'
@@ -23,6 +24,9 @@ export default function Pokemon (props) {
     
     return (
         <Layout>
+            <Head>
+                <title>Pokemon - {props.name.toUpperCase()}</title>
+            </Head>
             <PokemonSearchWidget/>
             <PokemonOrFallback/>
         </Layout>
